@@ -3,11 +3,10 @@ import { URL } from 'url';
 import request from 'request';
 import _ from 'underscore';
 
-import { Cats, Images, Votes } from 'meteor/catmash-collections';
+import { Cats, Images } from 'meteor/catmash-collections';
 
 Cats.remove({});
 Images.remove({});
-Votes.remove({});
 
 /**
  * Insert a cat into database
