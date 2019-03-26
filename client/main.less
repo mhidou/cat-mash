@@ -1,0 +1,38 @@
+body {
+  background-color: #f8f9fa !important;
+}
+
+.pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.fredoka {
+  font-family: 'Fredoka One', cursive;
+}
+
+.vote-container {
+  .cat-container {
+    .rounded-cat {
+      width: 75%;
+      border-radius: 50%;
+      overflow: hidden;
+      background-size: cover;
+      margin: 0 auto;
+      border: 10px solid #fff;
+      transition: border-color .3s;
+      cursor: pointer;
+      &:after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+      &:hover {
+        border-color: #28a745;
+      }
+    }
+  }
+  .actions {
+    width: 70px;
+    margin: -20% auto 0 auto;
+  }
+}

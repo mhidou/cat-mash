@@ -10,6 +10,10 @@ const CatSchema = new SimpleSchema({
     type: Number,
     defaultValue: 0,
   },
+  displayNumber: {
+    type: Number,
+    defaultValue: 0,
+  },
   status: {
     type: String,
     allowedValues: catStatus,

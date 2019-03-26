@@ -1,0 +1,19 @@
+<template name="cutestCats">
+  <h1 class="pacifico text-center mt-4 mb-4">Cutest cats</h1>
+  <div class="vote-container row">
+    {{#if Template.subscriptionsReady}}
+      {{#each cats}}
+        <div class="cat-container col-6 col-md-3 mt-2">
+          <div class="rounded-cat shadow-lg" style="background-image: url({{imageLink}});" data-id="{{_id}}">
+          </div>
+          <p class="text-center">{{percent}} ({{votesNumber}}/{{displayNumber}})</p>
+        </div>
+      {{else}}
+        <h2 class="col-12 fredoka text-center mt-4 mb-4">There are actually no votes</h2>
+        <div class="col-12 text-center mt-4 mb-4"><a href="/" class="btn btn-outline-primary">Please vote for your favorite cat first</a></div>
+      {{/each}}
+    {{else}}
+      {{> spinner}}
+    {{/if}}
+  </div>
+</template>
