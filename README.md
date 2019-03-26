@@ -28,6 +28,7 @@ Then, clone this repository
 
 git clone https://github.com/mhidou/cat-mash.git
 cd cat-mash
+npm install
 npm start
 ```
 
@@ -37,5 +38,5 @@ Scripts
 ```
 
 npm start                       Runs the app on localhost:3000
-npm run test                    Runs tests
+npm run test                    Runs tests on localhost: 3100
 ```
