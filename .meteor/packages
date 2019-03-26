@@ -22,3 +22,7 @@ blaze-html-templates
 kadira:blaze-layout
 reywood:publish-composite
 less
+jcbernack:reactive-aggregate
+sakulstra:aggregate
+sacha:spin
+meteortesting:mocha

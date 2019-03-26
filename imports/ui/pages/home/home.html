@@ -1,0 +1,21 @@
+<template name="home">
+  <h1 class="pacifico text-center mt-4 mb-4">Who is the cutest?</h1>
+  <div class="vote-container row">
+    {{#if Template.subscriptionsReady}}
+      {{#each cats}}
+        <div class="cat-container col-6 mt-2">
+          <div class="rounded-cat shadow-lg" style="background-image: url({{imageLink}});" data-id="{{_id}}">
+          </div>
+        </div>
+      {{/each}}
+      <div class="actions">
+        <h2 class="pacifico text-center mb-4">Or</h2>
+        <div class="col-12 text-center mt-4">
+          <a class="btn btn-warning randomize" href="#" role="button"><i class="fas fa-random"></i></a>
+        </div>
+      </div>
+    {{else}}
+      {{> spinner}}
+    {{/if}}
+  </div>
+</template>
